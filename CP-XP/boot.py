@@ -118,7 +118,7 @@ while time.time() - start_time < time_limit:
 os.system("cls")
 subprocess.Popen(["python", "C:\\CP-XP\\chime\\noise.py"])
 os.system("color 04")
-print(" C O M M O D O R E   P  Y T H O  N  | Python/")
+print(" C O M M O D O R E   P  Y T H O  N  | Python")
 os.system("color 06")
 print("███   ███ ████████  ███████████████ | Commodore")
 os.system("color 02")
@@ -126,7 +126,7 @@ print(" ███ ███  ██     ██ ███████████
 os.system("color 01")
 print("   ███    ██ █████  ███████████     | version")
 os.system("color 05")
-print(" ███ ███  ██        █████████       | 2.00 OSR 1")
+print(" ███ ███  ██        █████████       | 2.03 OSR 2")
 os.system("color 07")
 print("")
 if delete_pressed:

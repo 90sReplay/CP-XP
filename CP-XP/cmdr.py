@@ -1,6 +1,7 @@
 import code
 import os
 import winsound
+import sys
 
 def loadf(file):
     file_path = os.path.join("C:\\CP-XP\\drv", file)
@@ -67,11 +68,28 @@ def color(num):
     print("")
     print("Ready.")
 
+def ver(inp):
+    if inp == "":
+        print(" C O M M O D O R E   P  Y T H O  N  | Python")
+        print("███   ███ ████████  ███████████████ | Commodore")
+        print(" ███ ███  ██     ██ █████████████   | Emulator")
+        print("   ███    ██ █████  ███████████     | version")
+        print(" ███ ███  ██        █████████       | 2.03 OSR 2")
+    elif inp == "OSR":
+        print("OSR 2")
+    elif inp == "XPV":
+        print("2.03")
+    else:
+        print("?Syntax Error")
+    print("")
+    print("Ready.")
+
 custom_commands = {
     "loadf": loadf,
     "load": load,
     "beep": lambda args: beep(*args.split(',')),
     "color": color,
+    "ver": ver,
 }
 
 def execute_custom_command(command):
@@ -91,7 +109,7 @@ def main():
             command = input("").strip()
             
             if command in ("exit()", "quit()"):
-                break
+                quit()
             if command in ("res()", "restart()"):
                 os.system("\"C:\\CP-XP\\boot.py\"")
 
